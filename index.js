@@ -22,7 +22,7 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "shycombo"){
-        message.channel.sendMessage("```[The Shy Combo]\n\n Part 1 : E + R\nPart 2 : Flash + W\nPart 3 : AA + Hydra\nPart 4 : R + Q\n\nCe combo permet de one shot quelqu'un dans un temps très réduit. Assemblez toutes les parties rapidement pour un bon résultat!")
+        message.channel.sendMessage("```[The Shy Combo]\n\nPart 1 : E + R\nPart 2 : Flash + W\nPart 3 : AA + Hydra\nPart 4 : R + Q\n\nCe combo permet de one shot quelqu'un dans un temps très réduit. Assemblez toutes les parties rapidement pour un bon résultat!```")
     }
 
     if (message.content === prefix + "doublecast"){
