@@ -14,13 +14,16 @@ bot.login("NDA2Mjg3MDU2MjI3MDA4NTEy.DU0dWw.mlbcijETGlDfZ5DmdUpFJwdsWeg");
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("```🐈  Liste des commandes :\n - /neko pseudo \n - /neko doublecast \n - /neko shycombo \n - /nekopgg [pseudo]```");
+        message.channel.sendMessage("```🐈  Liste des commandes :\n - /neko pseudo \n - /neko doublecast \n - /neko shycombo \n - /nekopgg [pseudo]\n - /neko akieno```");
     }
 
     if (Opgg.match(message)) {
         Opgg.action(message)
     }
 
+    if (message.content === prefix + "akieno"){
+        message.channel.sendMessage("https://www.youtube.com/channel/UCMqzMn5JxQicuvfCj0Z6aGg")
+    }
     if (message.content === prefix + "shycombo"){
         message.channel.sendMessage("```[The Shy Combo]\n\nPart 1 : E + R\nPart 2 : Flash + W\nPart 3 : AA + Hydra\nPart 4 : R + Q\n\nCe combo permet de one shot quelqu'un dans un temps très réduit. Assemblez toutes les parties rapidement pour un bon résultat!```")
     }
