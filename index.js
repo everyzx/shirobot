@@ -14,11 +14,15 @@ bot.login("NDA2Mjg3MDU2MjI3MDA4NTEy.DU0dWw.mlbcijETGlDfZ5DmdUpFJwdsWeg");
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("```🐈  Liste des commandes :\n - /neko pseudo \n - /neko doublecast \n - /neko shycombo \n - /nekopgg [pseudo]\n - /neko akieno```");
+        message.channel.sendMessage("```🐈  Liste des commandes :\n - /neko pseudo \n - /neko doublecast \n - /neko shycombo \n - /nekopgg [pseudo]\n - /neko akieno\n - /neko jariv```");
     }
 
     if (Opgg.match(message)) {
         Opgg.action(message)
+    }
+    if (message.content === prefix + "jariv"){
+        message.channel.sendMessage("!search coro j'arrive j'arrive")
+        message.channel.sendMessage("1")
     }
 
     if (message.content === prefix + "akieno"){
